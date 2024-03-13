@@ -69,11 +69,6 @@ img{
   color: bisque;
   font-weight: bold;
 }
-.outro{
-  font-family: Impact,  Haettenschweiler,  'Arial Narrow Bold',  sans-serif; 
-  font-size: 25px;
-  color: crimson;
-}
 .transition
 {
   font-style: italic; 
@@ -82,6 +77,8 @@ img{
   font-weight: bold; 
   font-family: 'Trebuchet MS',  'Lucida Sans Unicode',  'Lucida Grande',  'Lucida Sans',  Arial,  sans-serif;
 }
+
+
 .tooltip {
   position: relative;
   display: inline-block;
@@ -103,39 +100,38 @@ img{
   visibility: hidden;
   background-color: rgb(80, 80, 80);
   color: #fff;
-  text-align: left;
+  text-align: justify;
   border-radius: 6px;
-  padding: 5px 0;
   position: absolute;
   z-index: 1;
-  padding: 15px;
+  padding: 10px;  
   display: grid;
   grid-template-rows: 150px auto;
-  row-gap: 20px;
-  min-width: 500px;
-  max-width: 550px;
+  row-gap: 25px;  
+  min-width: 450px;
+  max-width: 500px;
   left: 50%;
 	transform: translateX(-25%);
-  justify-content: center;
+  align-items: center;
+  vertical-align: center;
+  float: center;
 }
-
 .div1{
 width: auto;
 height: auto;
-position: static;
-padding: 5px;
+justify-self: center;
 }
 img {
   height: 150px;
   width: auto;
 }
 .div2{
-min-width: 500px;
-max-width: 550px;
+min-width: 450px;
+max-width: 475px;
 height: auto;
 position: static;
-margin-top: 10px ;
-
+justify-self: center;
+margin: 15px;
 }
 .tooltip .tooltiptext::after {
   position: absolute;
@@ -147,11 +143,16 @@ margin-top: 10px ;
   border-color: #555 transparent transparent transparent;
   opacity: 0.4;
 }
-
 .tooltip:hover .tooltiptext {
   visibility: visible;
   opacity: 1;
 
+}
+
+.outro{
+  font-family: Impact,  Haettenschweiler,  'Arial Narrow Bold',  sans-serif; 
+  font-size: 25px;
+  color: crimson;
 }
 .logo_akatsuki{
   height: 50px;
@@ -159,9 +160,9 @@ margin-top: 10px ;
 }
 .OUTRO
 {
-    font-family: Impact,  Haettenschweiler,  'Arial Narrow Bold',  sans-serif;
-    font-size: 20px;
-    color: aliceblue;
+  font-family: Impact,  Haettenschweiler,  'Arial Narrow Bold',  sans-serif;
+  font-size: 20px;
+  color: aliceblue;
 }
 .source{
   display: grid;
@@ -172,51 +173,145 @@ margin-top: 10px ;
 .outro_div{
   display: inline-block;
   padding-top: 5px;
-  width: 100%;
+  width: 50px;
 }
 
-@media screen and (max-width:750px) {
-            .page {
-               margin-left: 0px;
-               margin-right: 0px;
-               margin-top: 0px;
-               margin-bottom: 0px;
-            }
-            .tooltip .tooltiptext {
-  visibility: hidden;
-  background-color: rgb(80, 80, 80);
-  color: #fff;
-  text-align: left;
-  border-radius: 6px;
-  padding: 5px 0;
-  position: absolute;
-  z-index: 1;
-  padding: 15px;
-  display: grid;
-  grid-template-rows: 150px auto;
-  row-gap: 20px;
-  max-width: 250px;
-  left: 50%;
-	transform: translateX(-25%);
+@media screen and (max-width:1100px) {
+.intro{
+font-family: Impact,  Haettenschweiler,  'Arial Narrow Bold',  sans-serif; 
+color: coral; 
+font-size: 15px;
+}
+h1 {
+color: rgb(255,  84,  84);
+background-color: rgb(255,  206,  80);
+font-family:Impact,  Haettenschweiler,  'Arial Narrow Bold',  sans-serif;
+font-size: 20px;
+text-align: center;
+}
+.auteur{
+  align-content: center;
+  height: 100px ;
+  width: auto ;
+  border-radius: 20px;
+}
+p{
+  font-family:'Times New Roman',  Times,  serif;
+  font-size: 15px;
+}
+img{
+  height: 150px;
+}
+.titre{
+  color: rgb(255,  133,  93);
+  background-color: rgb(2,  100,  186);
+  padding: 5px;
+  font-weight: bold;
+  font-family:Verdana,  Geneva,  Tahoma,  sans-serif;
+  font-size: 15px;
+}
+.texte{
+  color:aliceblue;
+  font-family:'Times New Roman',  Times,  serif;
+  font-size: 15px;
+}
+.légende{
+  color: bisque;
+  font-weight: bold;
+}
+.page {
+margin-left: 0px;
+margin-right: 0px;
+margin-top: 0px;
+margin-bottom: 0px;
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+  text-align: justify;
+  font-family:'Times New Roman',  Times,  serif;
+  font-size: 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: whitesmoke;
+  color: brown;
+  font-weight: bold;
+  margin: 3px;
+  padding: 3px;
+}
+.tooltip .tooltiptext {
+visibility: hidden;
+background-color: rgb(80, 80, 80);
+color: #fff;
+text-align: center;
+border-radius: 6px;
+padding: 5px 0;
+position: absolute;
+z-index: 1;
+padding: 15px;
+display: grid;
+grid-template-rows: 150px auto;
+row-gap: 25px;  
+min-width: 225px;
+max-width: 225px;
+left: 50%;
+transform: translateX(-25%);
+align-items: center;
 }
 
 .div1{
-width: 300px;
-max-height: 300px;
 position: static;
-padding: 5px;
+float: center;
+justify-self: center;
 }
 img{
-  max-width: 250px;
-  max-height: 150px;
+float: center;
+height: 125px;
+width: 200px;
 }
 .div2{
-max-width: 250px;
+min-width: 175px;
+max-width: 200px;
 height: auto;
 position: static;
-margin-top: 10px ;
-background-color: aquamarine;
+justify-self: center;
+}
+.navigation{
+border-radius: 5px; 
+max-width: 50px;
+}
 
+.navigation_bar{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 30px;
+  justify-content: center;
+  padding: 10px;
+}
+
+
+.outro{
+  font-family: Impact,  Haettenschweiler,  'Arial Narrow Bold',  sans-serif; 
+  font-size: 10px;
+  color: crimson;
+}
+.logo_akatsuki{
+  height: 50px;
+  width: 50px;
+  border-radius: 20px;
+}
+.OUTRO
+{
+  font-family: Impact,  Haettenschweiler,  'Arial Narrow Bold',  sans-serif;
+  font-size: 15px;
+  color: aliceblue;
+  width: 275px;
+}
+.source{
+  display: grid;
+  grid-template-columns: 50px 250px ;
+  grid-gap: 5px;
 }
 }
     </style>
@@ -264,7 +359,7 @@ background-color: aquamarine;
 
            </br>
 
-            <img src="https://raw.githubusercontent.com/ArjunaK07/Texte-9-Bal/main/arthur%20rimbaud.png">
+           <img class="auteur" src="https://raw.githubusercontent.com/ArjunaK07/Texte-9-Bal/main/arthur%20rimbaud.png">
               <p class="intro">
               ARTHUR RIMBAUD : - Jeune poète français précoce dès ses 15 ans </br>
                          - Il termine sa carrière à l'age de 21 ans </br>
